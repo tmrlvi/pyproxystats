@@ -36,7 +36,7 @@ def run_stats(args):
     for type in proxies:
         for proxy, port in proxies[type]:
             success_rate, average_speed, error_desc = stats.get_stats(type, proxy, port)
-            manager.update(proxy, port, type, success_rate, average_speed, error_desc)         
+            manager.update_proxy(proxy, port, type, success_rate, average_speed, error_desc)         
 
 def main():
     parser = argparse.ArgumentParser(description='Process some integers.')
