@@ -1,4 +1,4 @@
-#!/bin/env python27
+#!/bin/env python
 """
 The main script for managing the proxy list. Run with -h.
 @author tmrlvi

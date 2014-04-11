@@ -51,8 +51,8 @@ def get_socks_proxy_opener_function(type):
     
 
 openers_getters = {
-    "http"   : get_urllib_proxy_opener_function("http"),
-    "https"  : get_urllib_proxy_opener_function("https"),
+    "http"   : get_urllib2_proxy_opener_function("http"),
+    "https"  : get_urllib2_proxy_opener_function("https"),
     "socks5" : get_socks_proxy_opener_function(socks.PROXY_TYPE_SOCKS5),
     "socks4" : get_socks_proxy_opener_function(socks.PROXY_TYPE_SOCKS4),
 }
